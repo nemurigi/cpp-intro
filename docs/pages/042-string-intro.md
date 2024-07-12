@@ -567,7 +567,7 @@ std::size_t strlen( const char * s )
 
 null終端文字列は文字型へのポインター1つだけなので取り回しがよい。ただし、文字列のサイズは実行時に文字列の先頭から末尾までイテレートして計算しなければならない。これは文字列の長さに比例したオーダー$O(N)$の処理量がかかる。
 
-### std::basic_string<CharT>
+### std::basic_string/<CharT/>
 
 いままで文字列の型として使ってきた`std::string`は、実はクラステンプレートで実装されている。
 
@@ -692,7 +692,7 @@ int main()
 }
 ~~~
 
-### std::basic_string_view<CharT>
+### std::basic_string_view/<CharT/>
 
 `basic_string_view`はストレージを所有しないクラスだ。以下のような宣言になる。
 

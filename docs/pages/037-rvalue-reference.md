@@ -462,7 +462,7 @@ int & move( int & t ) noexcept
 この問題は別のライブラリによって解決できる。
 
 
-### std::remove_reference_t<T>
+### std::remove_reference_t/<T/>
 
 `std::remove_reference_t<T>`は`T`型からリファレンス型を除去してくれるライブラリだ。
 

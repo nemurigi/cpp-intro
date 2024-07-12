@@ -697,7 +697,7 @@ bool open_chest( Engine & e )
 
 このようなコードを書くのは間違いの元だ。確率32%というのは`32.0/100.0`という`double`型の値で表現できる。この値だけ指定して、残りはライブラリに任せたい。そのようなときに使うのがベルヌーイ分布だ。
 
-### ベルヌーイ分布(std::bernoulli_distribution)
+### ベルヌーイ分布(`std::bernoulli_distribution`)
 
 ベルヌーイ分布(bernoulli distribution)は1回のベルヌーイ試行の結果を乱数として返す。
 
@@ -915,7 +915,7 @@ auto lootbox( Engine & e )
 
 確率1%で当たるくじを100回引くと、複数回当たることもあれば、1回も当たらないこともある。期待値は1だが、期待値というのは平均的に期待できる結果でしかない。読者諸君もくじ引きをするときは確率に気を付けよう。たとえくじが毎回公平であったとしても、確率は無記憶性なのだ。「もう90回くじを引いたからあと10回引けば当たるはず」という考え方は通用しない。
 
-### 幾何分布(std::geometric_distribution<IntType>)
+### 幾何分布(`std::geometric_distribution<IntType>`)
 
 幾何分布(geometric distribution)とは、確率$p$で成功するベルヌーイ試行を初めて成功するまで行った回数を乱数として分布する。
 
@@ -1016,7 +1016,7 @@ unsigned int try_lootboxes( Engine & e )
 
 確率1%のくじを当てるには、運が悪いと何百回も引かなければならない。
 
-### 負の二項分布(std::negative_binomial_distribution<IntType>)
+### 負の二項分布(`std::negative_binomial_distribution<IntType>`)
 
 負の二項分布(negative binomial distribution)は幾何分布に似ている。幾何分布がベルヌーイ試行が1回成功するまでに行ったベルヌーイ試行の回数を乱数として分布するのに対し、負の二項分布はベルヌーイ試行が$k$回成功するまでに行ったベルヌーイ試行の回数を乱数として分布する。
 
