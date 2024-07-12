@@ -39,28 +39,23 @@ export default defineConfig({
   description: "『江添亮のC++入門』のvitepress移植",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    // search: {
-    //   provider: 'local'
-    // },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
     ],
 
     sidebar: [
       {
         items: getSidebar()
-        // text: 'Examples',
-        // items: [
-        //   { text: 'Markdown Examples', link: '/markdown-examples' },
-        //   { text: 'Runtime API Examples', link: '/api-examples' }
-        // ]
       }
     ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+
+    search: {
+      provider: 'local'
+    },
   },
   markdown: {
     math: true
