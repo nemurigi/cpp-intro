@@ -1,12 +1,10 @@
-# 江添亮の入門C++
 
-まだ書きかけ。
+江添亮氏の『江添亮のC++入門』のVitePress移植
 
-モチベーション維持のために公開
+Cloudflare pagesで公開中
 
-GitHub Pagesでの閲覧
+<https://cpp-intro.pages.dev/>
 
-<https://ezoeryou.github.io/cpp-intro/>
 
 # ライセンス
 
