@@ -1,5 +1,5 @@
 
-江添亮氏の『江添亮のC++入門』のVitePress移植
+『江添亮のC++入門』のVitePress移植
 
 Cloudflare pagesで公開中
 
